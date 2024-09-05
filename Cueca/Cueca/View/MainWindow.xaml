@@ -1,0 +1,29 @@
+﻿<Window x:Class="Cueca.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Cueca"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/View/1900712.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="ButtomCadastrar" Content="Cadastrar" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="581,366,0,0" VerticalAlignment="Top" Height="29" Width="114"/>
+        <TextBox x:Name="TextAreaAtuacao" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="133,44,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="339" Height="29"/>
+        <TextBox x:Name="TextDescricao" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="35,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="733" Height="181"/>
+        <TextBox x:Name="TextCusto" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="103,363,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="183" Height="23"/>
+        <Label Content="Área de atuação" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="23,39,0,0" VerticalAlignment="Top" Height="29" Foreground="White" Background="Black"/>
+        <Label Content="Custo" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="51,357,0,0" VerticalAlignment="Top" Height="29" Foreground="White" Background="Black"/>
+        <Label Content="Descreva sua ideia aqui:" Grid.ColumnSpan="6" HorizontalAlignment="Left" Margin="35,115,0,0" VerticalAlignment="Top" Height="29" Foreground="White" Background="Black"/>
+    </Grid>
+</Window>
